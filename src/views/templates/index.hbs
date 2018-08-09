@@ -1,7 +1,8 @@
-{{#extend "base"}}
-{{#content "main" mode="prepend"}}
-    <div class="container">
-        <h1>Frontend Starter Kit</h1>
-    </div>
-{{/content}}
+{{#extend "base" title="Home"}}
+    {{#content "main" mode="prepend"}}
+        {{> header}}
+        <div class="container">
+            <h3>Frontend Starter Kit</h3>
+        </div>
+    {{/content}}
 {{/extend}}
