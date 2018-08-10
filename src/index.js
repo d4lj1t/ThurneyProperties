@@ -1,5 +1,5 @@
 import "./assets/css/main.scss";
-import "./assets/js/bootsrap.min.js";
+import "bootstrap";
 import "./assets/js/index.js";
 
 
