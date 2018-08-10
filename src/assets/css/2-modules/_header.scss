@@ -4,7 +4,7 @@ header {
   border-bottom: 1px solid $light-blue;
 
   .left-content {
-    width: 29%;
+    width: 30%;
     display: inline-block;
 
     .logo {
@@ -19,7 +19,7 @@ header {
 
 
   .right-content {
-    width: 69%;
+    width: 70%;
     display: inline-block;
     text-align: right;
     vertical-align: bottom;
@@ -35,7 +35,7 @@ header {
       span {
         color: $dark-blue;
         display: none;
-        font-weight: 700;
+        font-weight: 900;
 
         @include media-breakpoint-up(sm) {
           display: inline-block;
