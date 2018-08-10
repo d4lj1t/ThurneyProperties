@@ -1,0 +1,54 @@
+header {
+  padding: $spacingXXLarge 0;
+
+  border-bottom: 1px solid $light-blue;
+
+  .left-content {
+    width: 29%;
+    display: inline-block;
+
+    .logo {
+      width: 100%;
+      display: inline-block;
+      vertical-align: bottom;
+      max-width: 250px;
+      min-width: 170px;
+    }
+  }
+
+
+
+  .right-content {
+    width: 69%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+    margin-bottom: -5px;
+    a {
+      margin-bottom: -5px;
+      margin-left: 15px;
+      .fas {
+        font-size: 25px;
+        color: $light-blue;
+        margin-right: 5px;
+      }
+      span {
+        color: $dark-blue;
+        display: none;
+        font-weight: 700;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+        }
+      }
+
+      &.email-link {
+        display: none;
+        @include media-breakpoint-up(md) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
