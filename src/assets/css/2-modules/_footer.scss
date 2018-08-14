@@ -18,13 +18,13 @@ footer {
         font-size: 25px;
         color: $light-blue;
         margin-right: 5px;
-        transition: color $transition-delay ease-in;
+        /*transition: color $transition-delay ease-in;*/
       }
 
       span {
         color: $dark-blue;
         font-weight: 900;
-        transition: color $transition-delay ease-in;
+        /*transition: color $transition-delay ease-in;*/
       }
 
       display: block;
@@ -35,18 +35,14 @@ footer {
       }
 
       &:hover, &:focus {
-        color: $light-blue;
+        /*color: $light-blue;*/
         text-decoration: none;
         outline: none;
 
         span {
-          color: $light-blue;
+          /*color: $light-blue;*/
           text-decoration: none;
           outline: none;
-        }
-
-        .fas {
-          color: $dark-blue;
         }
       }
     }

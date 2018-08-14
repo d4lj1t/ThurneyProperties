@@ -35,13 +35,13 @@ header {
         font-size: 25px;
         color: $light-blue;
         margin-right: 5px;
-        transition: color $transition-delay ease-in;
+        /*transition: color $transition-delay ease-in;*/
       }
       span {
         color: $dark-blue;
         /*display: none;*/
         font-weight: 900;
-        transition: color $transition-delay ease-in;
+        /*transition: color $transition-delay ease-in;*/
 
         @include media-breakpoint-up(sm) {
           display: inline-block;
@@ -67,7 +67,9 @@ header {
         }
 
         .fas {
-          color: $dark-blue;
+          /*color: $dark-blue;*/
+          text-decoration: none;
+          outline: none;
         }
       }
     }
