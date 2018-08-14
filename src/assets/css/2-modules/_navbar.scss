@@ -10,7 +10,17 @@
     border-color: $light-blue;
   }
 
-  a {
-    font-weight: 900;
+  &.navbar-expand-md {
+    a.nav-link {
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: $spacingLarge;
+    }
+
+    .nav-item.active {
+      a {
+        font-weight: 900;
+      }
+    }
   }
 }
