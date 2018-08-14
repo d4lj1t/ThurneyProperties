@@ -7,6 +7,10 @@ header {
     width: 30%;
     display: inline-block;
 
+    .logo-link:hover {
+      opacity: 0.8;
+    }
+
     .logo {
       width: 100%;
       display: inline-block;
@@ -15,8 +19,6 @@ header {
       min-width: 170px;
     }
   }
-
-
 
   .right-content {
     width: 70%;
@@ -34,7 +36,7 @@ header {
       }
       span {
         color: $dark-blue;
-        display: none;
+        /*display: none;*/
         font-weight: 900;
 
         @include media-breakpoint-up(sm) {
@@ -42,10 +44,39 @@ header {
         }
       }
 
+      /*&.telephone-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        margin-top: $spacingXXLarge;
+
+        span {
+          display: inline-block;
+        }
+      }*/
+
       &.email-link {
         display: none;
         @include media-breakpoint-up(md) {
           display: inline-block;
+        }
+      }
+
+      &:hover, &:focus {
+        transition-delay:1s;
+        color: $light-blue;
+        text-decoration: none;
+        outline: none;
+
+        span {
+          color: $light-blue;
+          text-decoration: none;
+          outline: none;
+        }
+
+        .fas {
+          color: $dark-blue;
         }
       }
     }

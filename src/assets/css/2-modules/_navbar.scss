@@ -1,0 +1,16 @@
+.navbar {
+  padding: $spacingXXLarge 0;
+
+  .fa-bars {
+    color: $light-blue;
+    font-size: 25px;
+  }
+
+  .navbar-toggler {
+    border-color: $light-blue;
+  }
+
+  a {
+    font-weight: 900;
+  }
+}

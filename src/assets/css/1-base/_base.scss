@@ -39,12 +39,18 @@ h6, .h6 {
 	line-height: 1.6rem;
 }
 a {
-	color: $main-color;
+	color: $dark-blue;
 	@include transition(all 0.2s);
 	&:hover, &:focus {
-		color: darken($main-color, 10%);
+		color: $light-blue;
 		text-decoration: none;
 		outline: none;
+
+		span {
+			color: $light-blue;
+			text-decoration: none;
+			outline: none;
+		}
 	}
 }
 p {
