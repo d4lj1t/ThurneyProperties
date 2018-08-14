@@ -18,11 +18,13 @@ footer {
         font-size: 25px;
         color: $light-blue;
         margin-right: 5px;
+        transition: color $transition-delay ease-in;
       }
 
       span {
         color: $dark-blue;
         font-weight: 900;
+        transition: color $transition-delay ease-in;
       }
 
       display: block;
@@ -30,6 +32,22 @@ footer {
 
       @include media-breakpoint-up(sm) {
         display: inline-block;
+      }
+
+      &:hover, &:focus {
+        color: $light-blue;
+        text-decoration: none;
+        outline: none;
+
+        span {
+          color: $light-blue;
+          text-decoration: none;
+          outline: none;
+        }
+
+        .fas {
+          color: $dark-blue;
+        }
       }
     }
 }

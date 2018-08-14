@@ -7,6 +7,8 @@ header {
     width: 30%;
     display: inline-block;
 
+    transition: opacity $transition-delay ease-in;
+
     .logo-link:hover {
       opacity: 0.8;
     }
@@ -33,28 +35,18 @@ header {
         font-size: 25px;
         color: $light-blue;
         margin-right: 5px;
+        transition: color $transition-delay ease-in;
       }
       span {
         color: $dark-blue;
         /*display: none;*/
         font-weight: 900;
+        transition: color $transition-delay ease-in;
 
         @include media-breakpoint-up(sm) {
           display: inline-block;
         }
       }
-
-      /*&.telephone-link {
-        display: block;
-        width: 100%;
-        text-align: left;
-        margin-left: 0;
-        margin-top: $spacingXXLarge;
-
-        span {
-          display: inline-block;
-        }
-      }*/
 
       &.email-link {
         display: none;
@@ -64,7 +56,6 @@ header {
       }
 
       &:hover, &:focus {
-        transition-delay:1s;
         color: $light-blue;
         text-decoration: none;
         outline: none;
