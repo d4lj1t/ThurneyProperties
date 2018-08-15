@@ -1,5 +1,5 @@
 .navbar {
-  padding: $spacingXXLarge 0;
+  padding: $spacingXLarge 0;
 
   .fa-bars {
     color: $light-blue;
@@ -8,6 +8,10 @@
 
   .navbar-toggler {
     border-color: $light-blue;
+    &:hover, &:focus {
+      text-decoration: none;
+      outline: none;
+    }
   }
 
   &.navbar-expand-md {

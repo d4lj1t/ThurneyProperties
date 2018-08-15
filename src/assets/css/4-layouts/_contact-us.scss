@@ -2,6 +2,21 @@
   min-height: 600px;
   /*background-color: lightgrey;*/
   padding-bottom: $spacingXXXLarge;
+
+  textarea {
+    min-height: 212px;
+  }
+
+  .right-content {
+    margin-top: $spacingXXLarge;
+    @include media-breakpoint-up(md) {
+      margin-top: -7px;
+    }
+  }
+
+  hr {
+    margin-top: $spacingXXLarge;
+  }
 }
 
 .mapouter {
