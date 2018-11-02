@@ -1,23 +1,14 @@
 .main-content-home {
-  /*height: 600px;*/
-  /*background-color: lightgrey;*/
-  margin-bottom: $spacingXLarge;
-
   .images-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: $spacingSmall;
-
     a {
       @include media-breakpoint-up(xs) {
         max-width: 48%;
         margin-bottom: 4%;
+        flex: 1 0 48%;
       }
       @include media-breakpoint-up(sm) {
         max-width: 23%;
+        flex: 1 0 23%;
       }
 
       img {

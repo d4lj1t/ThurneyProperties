@@ -1,0 +1,12 @@
+.main-content-home, .unit-1, .unit-2 {
+  margin-bottom: $spacingXLarge;
+
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: $spacingSmall;
+  }
+}
