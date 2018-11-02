@@ -1,4 +1,4 @@
-.main-content-home {
+.unit-1, .unit-2 {
   /*height: 600px;*/
   /*background-color: lightgrey;*/
   margin-bottom: $spacingXLarge;
@@ -11,17 +11,21 @@
     justify-content: space-between;
     margin-bottom: $spacingSmall;
 
-    a {
+    img {
       @include media-breakpoint-up(xs) {
         max-width: 48%;
         margin-bottom: 4%;
       }
       @include media-breakpoint-up(sm) {
-        max-width: 23%;
+        max-width: 32%;
       }
 
-      img {
-        max-width: 100%;
+      &:nth-child(3) {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+          display: block;
+        }
       }
     }
   }
