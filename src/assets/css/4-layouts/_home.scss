@@ -9,6 +9,7 @@
       @include media-breakpoint-up(sm) {
         max-width: 23%;
         flex: 1 0 23%;
+        margin-bottom: 20px;
       }
 
       img {
