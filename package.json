@@ -4,7 +4,11 @@
   "description": "Frontend boilerplate for local frontend web development.",
   "author": "Rakshan Shetty",
   "license": "ISC",
-  "keywords": ["boilerplate", "starterkit", "webpack"],
+  "keywords": [
+    "boilerplate",
+    "starterkit",
+    "webpack"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +16,7 @@
     "build": "gulp build:optimized"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
     "bootstrap": "4.1.3",
     "jquery": "^3.2.1",
     "webpack": "3.0.0"
@@ -24,7 +29,7 @@
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.12",
     "connect-history-api-fallback": "^1.3.0",
-    "css-loader": "^0.28.4",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "gulp": "^3.9.1",
@@ -44,9 +49,10 @@
     "hygienist-middleware": "^0.1.3",
     "js-yaml": "^3.8.4",
     "node-sass": "^4.5.3",
+    "popper.js": "^1.14.7",
     "rimraf": "^2.6.1",
     "run-sequence": "^2.0.0",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^6.0.7",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack-dev-middleware": "^1.11.0",
