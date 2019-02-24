@@ -105,6 +105,10 @@ gulp.task("fonts", function() {
   return gulp.src("src/font/*").pipe(plumber()).pipe(gulp.dest("./dist/font"));
 });
 
+gulp.task("other", function() {
+  return gulp.src("src/assets/other/**/*").pipe(plumber()).pipe(gulp.dest("./dist/assets/other"));
+});
+
 gulp.task("templates", function() {
   var templateData = yaml.safeLoad(fs.readFileSync("data.yml", "utf-8"));
   var options = {
@@ -163,13 +167,13 @@ gulp.task("watch", function() {
 });
 
 gulp.task("build", function(cb) {
-  return runSequence("clean", ["images", "fonts", "webpack", "templates"], cb);
+  return runSequence("clean", ["images", "fonts", "webpack", "templates", "other"], cb);
 });
 
 gulp.task("build:optimized", function(cb) {
   return runSequence(
     "clean",
-    ["images", "webpack:optimized", "templates"],
+    ["images", "webpack:optimized", "templates", "other"],
     "css:optimized",
     cb
   );
