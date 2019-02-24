@@ -1,6 +1,7 @@
 .main-content-home {
   .images-container {
-    a {
+    > div {
+      position: relative;
       @include media-breakpoint-up(xs) {
         max-width: 48%;
         margin-bottom: 4%;
@@ -14,6 +15,30 @@
 
       img {
         max-width: 100%;
+      }
+
+      &:hover {
+        .overlay {
+          display: block;
+        }
+      }
+    }
+
+    .overlay {
+      display: none;
+      background-color: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: 0;
+      right: 0;
+
+      div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-weight: bold;
       }
     }
   }
